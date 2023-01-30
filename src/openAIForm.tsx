@@ -1,7 +1,7 @@
 import { useState, useId, useRef } from "react";
 
 function openAIForm() {
-  const openAI_API_Key = "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";
+  const openAI_API_Key = "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";
   const postTextAreaId = useId();
   const imgRef = useRef(null);
   const [image, setImage] = useState("");
