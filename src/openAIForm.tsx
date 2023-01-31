@@ -1,7 +1,7 @@
 import { useState, useId, useRef } from "react";
 
 function openAIForm() {
-  const openAI_API_Key = "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";
+  const openAI_API_Key = import.meta.env.VITE_API_KEY;
   const postTextAreaId = useId();
   const imgRef = useRef(null);
   const [image, setImage] = useState("");
@@ -36,7 +36,7 @@ function openAIForm() {
     <div>
       <form onSubmit={handleSubmit}>
         <label htmlFor={postTextAreaId} className="d-block w-100">
-          Type anything to generate an image
+          Type anything to generate an image 😉
         </label>
         <textarea defaultValue="starry night van gough with blinking stars" id={postTextAreaId} className="d-block w-100 res-none" rows={4} cols={40} name="description" />
         <input className="d-block w-100" type="submit" value="Submit" />
