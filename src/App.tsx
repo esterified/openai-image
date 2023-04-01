@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css';
-import OpenAIForm from './openAIForm';
+import OpenAIForm from './components/openAIForm';
 
 function App() {
   const [count, setCount] = useState(0)
